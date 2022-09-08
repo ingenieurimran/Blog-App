@@ -1,0 +1,17 @@
+<%-include('header.ejs')%>
+<body style="background-image: url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png')">
+    <div class="container">
+      <div class="card-body">
+        <h4 class="card-title mb-2"><%=article.title%></h4>
+        <div class="card-subtitle text-muted mb-2">
+          <%=article.createAt.toLocaleString()%>
+        </div>
+        <div class="card-text mb-2"><%=article.description%></div>
+        <a href="/" class="btn btn-secondary mt-2">All Posts</a>
+        <a href="/articles/edit/<%=article.id%>" class="btn btn-primary mt-2"
+          >Edit</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
